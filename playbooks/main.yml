@@ -1,6 +1,6 @@
 ---
 - name: Simple Ansible Playbook
-  hosts: all
+  hosts: "{{ target_hosts }}"
   tasks:
     - name: Print debug message
       debug:
